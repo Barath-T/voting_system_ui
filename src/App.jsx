@@ -7,7 +7,6 @@ import Users from './Users.jsx';
 
 function App() {
   const [error, setError] = useState(false);
-  const [smth, setSmth] = useState("");
 
   const [mode, setMode] = useState(0); //0-not logged, 1-admin, 2-user
 
@@ -28,7 +27,6 @@ function App() {
     ,
     onError: (err) => {
       console.log(JSON.stringify(err));
-      setSmth(err);
       setError(true);
     }
 
